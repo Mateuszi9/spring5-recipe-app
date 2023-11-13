@@ -1,22 +1,24 @@
 package guru.springframework.spring5recipeapp.domain;
 
-import lombok.Builder;
 import org.junit.Before;
+import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
+/**
+ * Created by jt on 6/17/17.
+ */
 public class CategoryTest {
 
     Category category;
 
     @Before
-    public void setUp()
-    {
+    public void setUp(){
         category = new Category();
     }
 
-    @org.junit.Test
-    public void getId() {
+    @Test
+    public void getId() throws Exception {
         Long idValue = 4L;
 
         category.setId(idValue);
@@ -24,11 +26,12 @@ public class CategoryTest {
         assertEquals(idValue, category.getId());
     }
 
-    @org.junit.Test
-    public void getDescription() {
+    @Test
+    public void getDescription() throws Exception {
     }
 
-    @org.junit.Test
-    public void getRecipes() {
+    @Test
+    public void getRecipes() throws Exception {
     }
+
 }
